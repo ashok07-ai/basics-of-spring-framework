@@ -1,4 +1,4 @@
-package com.tight.coupling;
+package com.example.tight.coupling;
 
 public class TightCouplingExample {
     public static void main(String[] args) {

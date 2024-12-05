@@ -1,4 +1,4 @@
-package com.loose.coupling;
+package com.example.loose.coupling;
 
 public class LooseCouplingExample {
     public static void main(String[] args) {

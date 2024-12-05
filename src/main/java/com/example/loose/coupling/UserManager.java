@@ -1,4 +1,4 @@
-package com.loose.coupling;
+package com.example.loose.coupling;
 
 public class UserManager {
    private final UserDataProvider userDataProvider;

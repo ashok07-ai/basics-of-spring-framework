@@ -1,6 +1,6 @@
-package com.ioc.coupling;
+package com.example.loose.coupling;
 
-public class WebServiceDataProvider implements UserDataProvider {
+public class WebServiceDataProvider implements UserDataProvider{
 
     @Override
     public String getUserDetails() {

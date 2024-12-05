@@ -78,6 +78,16 @@ Spring provides several ways to configure the container and define beans, depend
 - **Annotation-based Configuration**: With the advent of annotations, Spring has moved toward more modern and concise configuration styles. @Component, @Configuration, @Bean, and @Autowired are commonly used annotations in this approach.
 - **Java-based Configuration**: Java-based configuration allows you to define beans using Java code, and it can be the most flexible approach. 
 
+---
+
+## Autowiring
+Autowiring is a feature in the spring framework that allows the Spring container to automatically resolve and inject dependencies into a bean. It minimizes the need of explicit configurations by detecting and wiring beans based on certain rules.
+
+### Types of Autowiring
+- **Autowiring by Name**: The byName mode injects the object dependency according to the name of the bean. In such case, property name and bean name must be same. It internally calls setter method.
+- **Autowiring by Type**: The byType mode injects the object dependency according to type. So property name and bean name can be different. It internally calls setter method.
+- **Autowiring by Constructor** The constructor mode injects the dependency by calling the constructor of the class. It calls the constructor having large number of parameters.
+
 
 
 

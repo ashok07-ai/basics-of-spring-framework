@@ -1,4 +1,4 @@
-package com.ioc.coupling;
+package com.example.ioc.coupling;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

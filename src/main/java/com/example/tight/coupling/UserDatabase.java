@@ -1,7 +1,6 @@
-package com.ioc.coupling;
+package com.example.tight.coupling;
 
-public class UserDatabaseProvider implements UserDataProvider {
-    @Override
+public class UserDatabase {
     public String getUserDetails(){
         // Directly access database here
         return "User details from database";
