@@ -39,6 +39,9 @@ Dependency Injection is a design pattern commonly used in object-oriented progra
   - Constructor injection ensures that the dependencies are available when the object are created
 
 - **Setter Injection**
+  - Dependencies are provided in the setter method on the bean
+  - Less complex and easy to implement
+  - Highly readable in configurations
 
 ---
 
