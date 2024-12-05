@@ -32,6 +32,14 @@ Inversion of Control is a design principle where the control of **object creatio
 ## Dependency Injection (DI)
 Dependency Injection is a design pattern commonly used in object-oriented programming, where the dependencies of a class are provided externally rather than being created within the class itself.
 
+### Types of Dependency Injection (DI)
+- **Constructor Injection**
+  - Dependencies are provided to the dependent class through its constructor
+  - Dependencies are passed as arguments to the constructor when the dependent class is instantiated
+  - Constructor injection ensures that the dependencies are available when the object are created
+
+- **Setter Injection**
+
 ---
 
 ## Beans
