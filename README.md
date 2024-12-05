@@ -3,8 +3,6 @@
 ## Coupling
 Coupling refers to how closely connected different components or systems are.
 
----
-
 ## Tight Coupling
 Tight coupling describes a scenario where software components are **highly dependent** on each other. This can make the code difficult to maintain, test, or modify because changes in one class often require changes in others.
 
@@ -46,6 +44,28 @@ Objects that are managed by frameworks are known as Beans. These objects are cre
 - Usage: The bean is used within the application.
 - Destruction: With the application context is closed, beans are destroyed. Custom cleanup methods (e.g., those annotated with **@PreDestroy**) are invoked.
   - For more details, refer to the [Spring Documentation on Bean Initialization.](https://docs.spring.io/spring-framework/reference/core/beans/annotation-config/postconstruct-and-predestroy-annotations.html)
+
+---
+## Spring Container
+The spring container is the core of the Spring Framework. The container will create the objects, wire them together, configure them, and manage their complete lifecycle from creation till destruction.
+
+### Types of Spring Container
+- **BeanFactory Container**
+  - The simples container in Spring, designed to be lightweight and used when minimal resource usage is needed.
+  - Example: XmlBeanFactory(deprecated) or DefaultListableBeanFactory.
+- ApplicationContext Container
+  - A more advanced container than BeanFactory, with more features like event propagation, declarative mechanisms and more.
+  - Example: ClassPathXmlApplicationContext, AnnotationConfigApplicationContext, GenericWebApplicationContext.
+  - ApplicationContext includes everything **BeanFactory** offers, but also adds more functionality. It's the preferred choice for most applications.
+
+---
+
+## Spring Configuration
+Spring provides several ways to configure the container and define beans, depending on the style of configuration you prefer (XML-based, annotation-based, or Java-based)
+- **XML-Based Configuration**: XML configuration is one of the oldest and widely used methods for setting up Spring beans and the container
+- **Annotation-based Configuration**: With the advent of annotations, Spring has moved toward more modern and concise configuration styles. @Component, @Configuration, @Bean, and @Autowired are commonly used annotations in this approach.
+- **Java-based Configuration**: Java-based configuration allows you to define beans using Java code, and it can be the most flexible approach. 
+
 
 
 
