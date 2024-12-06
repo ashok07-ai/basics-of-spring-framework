@@ -1,7 +1,7 @@
-package com.example.autowire.constructor;
+package com.example.autowired.constructor;
 
 public class Car {
-    private Specification specification;
+    private final Specification specification;
 
     public Car(Specification specification) {
         this.specification = specification;

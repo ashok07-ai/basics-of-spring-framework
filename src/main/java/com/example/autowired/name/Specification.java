@@ -1,4 +1,4 @@
-package com.example.autowire.type;
+package com.example.autowired.name;
 
 public class Specification {
     private String make;

@@ -88,7 +88,47 @@ Autowiring is a feature in the spring framework that allows the Spring container
 - **Autowiring by Type**: The byType mode injects the object dependency according to type. So property name and bean name can be different. It internally calls setter method.
 - **Autowiring by Constructor** The constructor mode injects the dependency by calling the constructor of the class. It calls the constructor having large number of parameters.
 
+---
 
+## Annotations
+Spring annotations in java provide a way to configure and define the behaviour of application.
+These annotations are a part of the Spring Framework and are used for various purposes, such as dependency injection, bean lifecycle management, configuration, AOP (Aspect-Oriented Programming), and more.
 
+### Commonly Used Spring Annotations
+- **@Configuration**: Marks a class as a source of bean definitions for the Spring IoC container.
+- **@Bean**: Indicates that a method produces a bean to be managed by the Spring container.
+- **@Component**: Marks a class as a spring component, making it a candidate of Spring's component scanning to detect and register as a bean.
+- **@Controller**: Specialization of **@Component** of Spring MVC Controllers.
+- **@Service**: Specialization of **@Component** to indicate service-layer components.
+- **@Repository**: Specialization of **@Component** for the persistence layer.
+- **@Autowired**: Used for automatic dependency injection.
+- **@Qualifier**: The @Qualifier annotation in Spring is used to resolve ambiguity when multiple beans of the same type are available in the Spring container. By specifying a qualifier, you can direct Spring to inject a specific bean.
+- **@Value**: Indicates values from property files or environment variables.
+- **@SpringBootApplication**: 
+  - Combination of **@Configuration**, **@EnableAutoConfiguration**, and **@ComponentScan**.
+  - Marks the main class for a Spring Boot Application.
+- **@RequestMapping**: Maps HTTP requests to handler methods of MVC and REST controllers.
+- **@GetMapping**, **@PostMapping**, **@PutMapping**, **@DeleteMapping**, **@PatchMapping**: Shortcuts for **@RequestMapping** for specific HTTP methods.
+- **@PathVariable**: Binds URI template variables to method arguments.
+- **@RequestMapping**: Binds the body of an HTTP request to a Java Object.
+- **@Valid**: Triggers validation for the annotated object.
+- **@NotNull**, **@Size**, **@Pattern**: Bean validation annotations for validating fields.
+- **@Transactional**: Indicates that a method or class should be executed  within a transaction.
+- **@EnableScheduling**: Enables Spring's scheduling capabilities.
+- **@Scheduled**: Marks a method to be scheduled for execution.
+- **@EnableWebSecurity**: Enables Spring security for application.
+- **@PreAuthorize**, **@PostAuthorize**: Used to secure methods with expressions.
+- **@SpringBootTest**: Loads the complete application context for integration tests.
+- **@MockBean**: Adds a mock bean to the application context.
 
+---
+
+## Component
+It refers to a Java class that is managed by the Spring IoC container. It is annotated with @Component or its specialized annotations (@Controller, @Service, @Repository) that Spring registers as a bean in the ApplicationContext.
+
+---
+
+## Component Scanning
+It is a feature that helps to automatically detect and register beans from predefined packages paths. It reduces boilerplate configuration in XML or Java. It automatically manages beans based on annotations.
+To enable component scanning, use: **@ComponentScan**, **@SpringBootApplication** annotation.
 
